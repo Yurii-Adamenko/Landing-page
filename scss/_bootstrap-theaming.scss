@@ -9,7 +9,7 @@
   &-expand-lg .navbar-nav .nav-link {
     padding: 25px 15px;
     line-height: 20px;
-    transition: color 0.25s;
+    transition: 0.25s;
     &:hover {
       background-color: #333333;
       color: $color-active;
@@ -22,5 +22,45 @@
 .nav-item {
   &.active {
     background-color: $color-active;
+  }
+}
+.carousel {
+  &-inner {
+    background-color: #111111;
+  }
+  &-item {
+    overflow: hidden;
+    height: 100vh;
+    img {
+      position: relative;
+      bottom: 25.7%;
+      filter: brightness(0.7) saturate(0.3);
+    }
+  }
+  &-caption {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 100%;
+    text-transform: uppercase;
+    h3 {
+      margin-top: 50px;
+      font-weight: bold;
+      font-size: 64px;
+    }
+    p {
+      padding-top: 25px;
+      font-size: 24px;
+    }
+  }
+  &-control-prev {
+    background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-repeat: repeat-x;
+  }
+  &-control-next {
+    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-repeat: repeat-x; 
   }
 }

@@ -10,9 +10,9 @@
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 25px 15px;
   line-height: 20px;
-  -webkit-transition: color 0.25s;
-  -o-transition: color 0.25s;
-  transition: color 0.25s;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
@@ -26,6 +26,68 @@
 
 .nav-item.active {
   background-color: #ee3b24;
+}
+
+.carousel-inner {
+  background-color: #111111;
+}
+
+.carousel-item {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.carousel-item img {
+  position: relative;
+  bottom: 25.7%;
+  -webkit-filter: brightness(0.7) saturate(0.3);
+  filter: brightness(0.7) saturate(0.3);
+}
+
+.carousel-caption {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+  height: 100%;
+  text-transform: uppercase;
+}
+
+.carousel-caption h3 {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.carousel-caption p {
+  padding-top: 25px;
+  font-size: 24px;
+}
+
+.carousel-control-prev {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+}
+
+.carousel-control-next {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
 }
 
 body {
@@ -61,6 +123,9 @@ body {
 
 .header-navbar--modifier .navbar-expand-lg .navbar-nav .nav-link {
   padding: 15px;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 
 /*# sourceMappingURL=style.css.map */
