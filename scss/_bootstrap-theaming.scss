@@ -1,0 +1,26 @@
+.navbar{
+  &-brand {
+    padding: 15px;
+    padding-left: 0;
+    text-transform: uppercase;  
+    font-size: 18px;
+    line-height: 20px;
+  }
+  &-expand-lg .navbar-nav .nav-link {
+    padding: 25px 15px;
+    line-height: 20px;
+    transition: color 0.25s;
+    &:hover {
+      background-color: #333333;
+      color: $color-active;
+    }
+  }
+  &-nav {
+    margin-right: -15px;
+  }
+} 
+.nav-item {
+  &.active {
+    background-color: $color-active;
+  }
+}

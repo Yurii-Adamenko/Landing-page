@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.navbar-brand {
+  padding: 15px;
+  padding-left: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 25px 15px;
+  line-height: 20px;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  background-color: #333333;
+  color: #ee3b24;
+}
+
+.navbar-nav {
+  margin-right: -15px;
+}
+
+.nav-item.active {
+  background-color: #ee3b24;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.test {
+  width: 200px;
+  height: 200px;
+  background-color: #123;
+}
+
+.item {
+  background-color: #fff;
+}
+
+.header-navbar {
+  background-color: transparent;
+}
+
+.header-navbar .container {
+  padding: 0;
+}
+
+.header-navbar a {
+  color: #eeeeee;
+}
+
+.header-navbar--modifier {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header-navbar--modifier .navbar-expand-lg .navbar-nav .nav-link {
+  padding: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
