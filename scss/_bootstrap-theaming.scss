@@ -9,7 +9,7 @@
     font-size: 18px;
     line-height: 20px;
   }
-  &-expand-lg .navbar-nav .nav-link {
+  &-expand-md .navbar-nav .nav-link {
     padding: 25px 15px;
     line-height: 20px;
     transition: 0.25s;
@@ -39,7 +39,7 @@
   }
   &-item {
     overflow: hidden;
-    height: 100vh;
+    max-height: 100vh;
     img {
       position: relative;
       bottom: 25.7%;
@@ -75,4 +75,7 @@
 }
 .bg-danger {
   background-color: $color-active !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #eeeeee;
 }
