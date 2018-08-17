@@ -1,0 +1,226 @@
+.page-section {
+  overflow: hidden;
+  padding: 50px 0;
+  &__title {
+    margin: 30px 0;
+    text-align: center;
+  }
+  &__subtitle {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+.progress-item {
+  margin: 10px 0 20px;
+  h4 {
+    font-size: 18px;
+  }
+}
+.page-features {
+  background-color: #dddddd;
+  &-icon {
+    position: relative;
+    display: inline-block;
+    margin: 55px 0 75px 0;
+    width: 80px;
+    height: 40px;
+    background: $color-active;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+    &:before {
+      position: absolute;
+      top: -25px; 
+      left: 0;
+      width: 0;
+      height: 0;
+      border-right: 40px solid transparent;
+      border-bottom: 25px solid $color-active;
+      border-left: 40px solid transparent;
+      content: "";
+    }
+    &:after {
+      position: absolute;
+      bottom: -25px; 
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 25px solid $color-active;
+      border-right: 40px solid transparent;
+      border-left: 40px solid transparent;
+      content: "";
+    }
+  }
+}
+.page-gallery {
+  &-item {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    &__image {
+      width: 100%;
+      transition: 0.5s ease 0s;
+    }
+    &__caption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      transition: 0.5s ease 0s;
+      &__title {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        font-weight: bold;
+        transition: 0.5s ease 0s;
+      }
+      &__link {
+        position: absolute;
+        bottom: 100%;
+        left: 44%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background-color: $color-active;
+        color: #fff;
+        transition: 0.5s ease 0s;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    &:hover {
+      .page-gallery-item {
+        &__image {
+          transform: scale(1.8);
+        }
+        &__caption {
+          background-color: rgba(1, 1, 1, 0.8);
+          &__title {
+            top: 78%;
+          }
+          &__link {
+            bottom: 73%;
+          }
+        }
+      }
+    }
+  }
+}
+.page-latest {
+  margin-top: 40px;
+  padding-bottom: 100px;
+  background-color: #cccccc;
+  &-item {
+    a {
+      background-color: #fff;
+      color: #333333;
+      text-decoration: none;
+      font-size: 12.8px;
+      transition: 0.25s ease 0s;
+      &:hover {
+        background-color: $color-active;
+        color: #fff;
+        img {
+          filter: saturate(2);
+        }
+      }
+    }
+    img {
+      filter: saturate(0.7);
+      transition: 0.25s ease 0s;
+    }
+    &__description {
+      padding: 10px 15px !important;
+      p {
+        margin-bottom: 10px;
+      }
+      i {
+        padding-right: 10px;
+      }
+    }
+  }
+}
+.page-choose {
+  &-image {
+    background-image: url(../img/gallery/banner4.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &-content {
+    overflow: hidden;
+    background-color: #dddddd;
+  }
+  &-item {
+    display: flex;
+    padding: 20px 0 10px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    &__icon {
+      margin-top: -7px;
+      color: $color-active;
+      font-size: 46px;
+      i {
+        width: 60px;
+        text-align: center;
+      }
+    }
+    &__text {
+      margin-left: 20px;
+      p {
+        margin: 0px;
+      }
+    }
+  }
+}
+.page-contact {
+  form {
+    text-align: center;
+  }
+}
+.page-footer {
+  color: #cccccc;
+  font-size: 14px;
+  &-top {
+    background-color: #282828;
+    h3 {
+      margin-top: 20px;
+      text-transform: uppercase;
+      &:first-letter {
+        color: $color-active;
+      }
+    }
+    ul {
+      margin-bottom: 10px;
+      list-style-type: none;
+    }
+    li {
+      &:before {
+        margin-right: 17px;
+        content: "\f30b";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+      }
+    }
+    a {
+      color: #cccccc;
+      text-decoration: none;
+      &:hover {
+        color: $color-active;
+      }
+    }
+  }
+  &-bottom {
+    padding: 20px 0;
+    background-color: #333333;
+    text-align: center;
+  }
+}

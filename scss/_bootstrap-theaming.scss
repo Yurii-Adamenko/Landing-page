@@ -1,3 +1,6 @@
+.container {
+  padding: 0;
+}
 .navbar{
   &-brand {
     padding: 15px;
@@ -63,4 +66,7 @@
     background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
     background-repeat: repeat-x; 
   }
+}
+.bg-danger {
+  background-color: $color-active !important;
 }
