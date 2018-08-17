@@ -9,6 +9,12 @@
       else t_sticky.removeClass('header-navbar--modifier');
   });
 
+  $(document).ready(function() {
+    $('#navbar').onePageNav({
+      currentClass: 'active',
+    });
+  });
+
   AOS.init({
     duration: 500,
     easing: 'ease-in-sine',

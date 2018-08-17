@@ -21,26 +21,26 @@
         
         <div class="collapse navbar-collapse justify-content-end" id="header-navbar">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#page-carousel">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="#page-about">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#page-features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="#page-gallery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#page-latest">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Why choose us</a>
+              <a class="nav-link" href="#page-choose">Why choose us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacts</a>
+              <a class="nav-link" href="#page-contact">Contacts</a>
             </li>
           </ul>
         </div>
@@ -49,7 +49,7 @@
 
     <main>
       
-      <section class="page-carousel">
+      <section id="page-carousel" class="page-carousel">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -85,7 +85,7 @@
         </div>
       </section>
 
-      <section class="page-about page-section">
+      <section id="page-about" class="page-about page-section">
         <div class="container">
           <h2 class="page-section__title" data-aos="fade-up">About us</h2>
           <div class="row">
@@ -130,7 +130,7 @@
         </div>
       </section>
 
-      <section class="page-features page-section">
+      <section id="page-features" class="page-features page-section">
         <div class="container">
           <div class="row" data-aos="fade-up">
             <div class="col page-features-header">
@@ -163,7 +163,7 @@
         </div>
       </section>
 
-      <section class="page-gallery page-section">
+      <section id="page-gallery" class="page-gallery page-section">
         <div class="container-fluid">
           <div class="row">
             <div class="col" data-aos="fade-up">
@@ -248,7 +248,7 @@
         </div>
       </section>
 
-      <section class="page-latest page-section">
+      <section id="page-latest" class="page-latest page-section">
         <div class="container">
           <div classs="row">
             <div class="col" data-aos="fade-up">
@@ -317,7 +317,7 @@
         </div>
       </section> 
 
-      <section class="page-choose">
+      <section id="page-choose" class="page-choose">
         <div class="container-fluid">
           <div class="row page-choose-image">
             <div class="col-6"></div>
@@ -361,7 +361,7 @@
         </div>
       </section> 
   
-      <section class="page-contact page-section">
+      <section id="page-contact" class="page-contact page-section">
         <div class="container">
           <div class="row">
             <div class="col" data-aos="fade-up">
@@ -379,7 +379,7 @@
                   <input type="text" class="form-control form-control-lg" placeholder="Your name (required field)">
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" placeholder="Write your message here ... (required field)" rows="10"></textarea>
+                  <textarea class="form-control" placeholder="Write your message here ... (required field)" rows="8"></textarea>
                 </div>
                 <button type="submit" class="btn btn-lg btn-warning">Send message</button>
               </form>
@@ -447,9 +447,10 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/jquery.nav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
   </body>

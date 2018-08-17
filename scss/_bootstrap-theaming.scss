@@ -21,10 +21,16 @@
   &-nav {
     margin-right: -15px;
   }
-} 
+}
 .nav-item {
   &.active {
     background-color: $color-active;
+    &:hover {
+      a:hover {
+        background-color: $color-active !important;
+        color: #eeeeee !important;
+      }
+    }
   }
 }
 .carousel {
